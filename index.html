@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <p>
+            Hi i heard you need be in one place, and very fast. <br/>
+            I can help you, but for that i need know where are you. <br/>
+            And where you need in be?
+        </p>
+        <p>
+            P.S. <br/>
+            Coordinates must be a bigger 0 and smaller than 100, <br/>
+            and have only two cypher after point
+        </p>
+        <p>
+            <span>
+                Say me your latitude 
+            </span>
+            <input type="number" id="nowLat" class="coordinates">
+            <span> 
+                and longitude
+            </span>
+            <input type="number" id='nowLong' class="coordinates">          
+        </p>
+        <p>
+            <span>
+                And say me where you need going
+            </span>
+            <input type="number" id="needLat" class="coordinates">
+            <input type="number" id='needLong' class="coordinates">          
+            
+        </p>
+        <button onclick="clickBtn()">Get fastest way</button>
+        
+        <p class="result visibleOf" id="presult" >
+            I think your better road be a: <br/>
+            <span id="result">00</span> <br/>
+            Have a nice day))
+        </p>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>
